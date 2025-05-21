@@ -1,0 +1,14 @@
+name: Premier workflow # Commentaire
+
+on: # Le ou les déclencheurs
+  workflow_dispatch: # Permet de déclencher le workflow manuellement
+
+jobs: # Lister et de définir les différents travaux
+  nom_job1: # Peut être personnaliser
+    runs-on: ubuntu-latest
+
+    steps: # Liste des étapes ( steps ) à exécuter par le jub (n°1)
+      - name: 1ere opération
+        run: echo "Hello Github Action !" # Commande Shell exécutée
+      - name: 2nde opération
+        run: echo "Bye Github Action !" # Commande Shell exécutée
